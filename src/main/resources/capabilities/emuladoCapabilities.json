@@ -1,0 +1,7 @@
+{
+  "appium:deviceName": "Pixel_3a",
+  "platformName": "Android",
+  "appium:resetKeyboard": "true",
+  "appium:unicodeKeyboard": "true",
+  "appium:avd": "Pixel_3a"
+}

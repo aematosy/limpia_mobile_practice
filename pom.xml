@@ -33,9 +33,7 @@
             <properties>
                 <crowdar.driverHub>http://127.0.0.1:4723/wd/hub</crowdar.driverHub>
                 <cucumber.runner>testng.xml</cucumber.runner>
-                <crowdar.avd>Pixel3</crowdar.avd>
-                <crowdar.appLocation>C:\\\\Users\\\\golde\\\\Desktop\\\\lippia-mobile-sample-project\\\\sample_apk\\\\lippia.apk</crowdar.appLocation>
-                <crowdar.deviceName>Pixel3</crowdar.deviceName>
+                <crowdar.appLocation>/Users/adrianmatos/proyectos_automatizacion/lippia-mobile-sample-project_clases/sample_apk/lippia.apk</crowdar.appLocation>
             </properties>
         </profile>
         <profile>
@@ -48,12 +46,20 @@
             </properties>
         </profile>
         <profile>
-            <id>Android</id>
-            <activation>
-                <activeByDefault>true</activeByDefault>
-            </activation>
+            <id>Fisico</id>
             <properties>
                 <crowdar.projectType>MOBILE_ANDROID</crowdar.projectType>
+                <crowdar.projectType.driverCapabilities.jsonFile>src/main/resources/capabilities/fisicoCapabilities.json</crowdar.projectType.driverCapabilities.jsonFile>
+                <crowdar.deviceName>S21 ULTRA</crowdar.deviceName>
+            </properties>
+        </profile>
+        <profile>
+            <id>Emulado</id>
+            <properties>
+                <crowdar.projectType>MOBILE_ANDROID</crowdar.projectType>
+                <crowdar.projectType.driverCapabilities.jsonFile>src/main/resources/capabilities/androidCapabilities.json</crowdar.projectType.driverCapabilities.jsonFile>
+                <crowdar.avd>Pixel_3a</crowdar.avd>
+                <crowdar.deviceName>Pixel_3a</crowdar.deviceName>
             </properties>
         </profile>
         <profile>
