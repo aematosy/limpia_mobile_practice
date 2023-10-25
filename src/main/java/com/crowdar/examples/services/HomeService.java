@@ -2,6 +2,7 @@ package com.crowdar.examples.services;
 
 import com.crowdar.core.actions.MobileActionManager;
 import com.crowdar.examples.constants.HomeConstants;
+import com.crowdar.examples.constants.LoginConstants;
 import org.testng.Assert;
 
 /**
@@ -11,8 +12,8 @@ import org.testng.Assert;
  */
 public class HomeService {
 
-    public static void isViewLoaded() {
-        MobileActionManager.waitVisibility(HomeConstants.SIGN_OUT_BUTTON_LOCATOR);
-        Assert.assertTrue(MobileActionManager.isVisible(HomeConstants.CHANGE_LANGUAGE_BUTTON_LOCATOR), HomeConstants.VIEW_NOT_DISPLAYED_MESSAGE);
+    public static void doClickAddButton() {
+        MobileActionManager.waitVisibility(HomeConstants.ADD_BUTTON_LOCATOR);
+        MobileActionManager.click(HomeConstants.ADD_BUTTON_LOCATOR);
     }
 }

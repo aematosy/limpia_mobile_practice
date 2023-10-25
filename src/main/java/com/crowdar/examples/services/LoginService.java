@@ -20,6 +20,6 @@ public class LoginService {
 
     public static void isViewLoaded(){
         MobileActionManager.waitVisibility(LoginConstants.SIGN_UP_BUTTON_LOCATOR);
-        Assert.assertTrue(MobileActionManager.isVisible(LoginConstants.EMAIL_INPUT_LOCATOR), LoginConstants.VIEW_NOT_DISPLAYED_MESSAGE);
+        Assert.assertTrue(MobileActionManager.isVisible(LoginConstants.SIGN_UP_BUTTON_LOCATOR), LoginConstants.VIEW_NOT_DISPLAYED_MESSAGE);
     }
 }

@@ -14,18 +14,17 @@ import cucumber.api.java.en.When;
  */
 public class LoginSteps extends PageSteps {
 
-    @Given("The app is loaded correctly")
-    @Then("Login page is displayed")
+    @Given("La aplicacion se carga correctamente")
     public void isLoginPageVisible() {
         LoginService.isViewLoaded();
     }
 
-    @When("The user goes to the Sign Up page")
+    @When("El usuario se encuentra en la pantalla de loguin")
     public void goToSignUp() {
-        MobileActionManager.click(LoginConstants.SIGN_UP_BUTTON_LOCATOR);
+        MobileActionManager.waitVisibility(LoginConstants.EMAIL_INPUT_LOCATOR);
     }
 
-    @When("The user logs in the application with: (.*), (.*)")
+    @When("El usuario inicia sesion con: (.*), (.*)")
     public void doLoginProcess(String email, String password) {
         LoginService.doLogin(email, password);
     }
