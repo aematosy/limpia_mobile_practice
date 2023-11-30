@@ -4,9 +4,9 @@ import com.crowdar.core.PageSteps;
 import com.crowdar.core.actions.MobileActionManager;
 import com.crowdar.examples.constants.HomeConstants;
 import com.crowdar.examples.services.HomeService;
+import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
-import cucumber.api.java.en.When;
 
 public class HomeSteps extends PageSteps {
 
@@ -19,5 +19,25 @@ public class HomeSteps extends PageSteps {
     @Given("El usuario hace clic al boton con icono +")
     public void clickAddButton() {
         HomeService.doClickAddButton();
+    }
+
+    @And("El usuario hace clic en el panel lateral de navegacion")
+    public void clickMenuNavigationButton() {
+        HomeService.doClickMenuButton();
+    }
+
+    @And("El usuario hace clic en la opcion setting")
+    public void clickSettingButton() {
+        HomeService.doClickSettingButton();
+    }
+
+    @And("El usuario hace clic en el boton de logout")
+    public void clickLogoutButton() {
+        HomeService.doClickLogoutButton();
+    }
+
+    @And("El usuario elimina el registro de la entrada de datos con workspaceID: (.*), apiKey: (.*) y userID: (.*)")
+    public void deleteRegisterData(String workspace, String apiKey, String userId) {
+        HomeService.doDeleteRegisterData(workspace,apiKey,userId);
     }
 }

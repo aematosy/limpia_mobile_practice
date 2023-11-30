@@ -6,5 +6,5 @@
   "resetKeyboard": "true",
   "unicodeKeyboard": "true",
   "appPackage": "me.clockify.android",
-  "appActivity": "me.clockify.android.presenter.SplashActivity"
+  "appActivity": "me.clockify.android.presenter.SplashActivity",
 }

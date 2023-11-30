@@ -19,6 +19,7 @@ public class LoginSteps extends PageSteps {
         LoginService.isViewLoaded();
     }
 
+    @Then("El usuario retorna a la pantalla de loguin")
     @When("El usuario se encuentra en la pantalla de loguin")
     public void goToSignUp() {
         MobileActionManager.waitVisibility(LoginConstants.EMAIL_INPUT_LOCATOR);
@@ -28,5 +29,4 @@ public class LoginSteps extends PageSteps {
     public void doLoginProcess(String email, String password) {
         LoginService.doLogin(email, password);
     }
-
 }

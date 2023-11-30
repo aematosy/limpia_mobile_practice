@@ -52,7 +52,7 @@
                 <crowdar.projectType>MOBILE_ANDROID</crowdar.projectType>
                 <crowdar.projectType.driverCapabilities.jsonFile>src/main/resources/capabilities/fisicoCapabilities.json</crowdar.projectType.driverCapabilities.jsonFile>
                 <crowdar.deviceName>S21 ULTRA</crowdar.deviceName>
-                <crowdar.cucumber.filter>@Demo_clockify</crowdar.cucumber.filter>
+                <crowdar.cucumber.filter>@TPFinal_mobile</crowdar.cucumber.filter>
             </properties>
         </profile>
         <profile>
@@ -62,6 +62,7 @@
                 <crowdar.projectType.driverCapabilities.jsonFile>src/main/resources/capabilities/androidCapabilities.json</crowdar.projectType.driverCapabilities.jsonFile>
                 <crowdar.avd>Pixel_3a</crowdar.avd>
                 <crowdar.deviceName>Pixel_3a</crowdar.deviceName>
+                <crowdar.cucumber.filter>@TPFinal_mobile</crowdar.cucumber.filter>
             </properties>
         </profile>
         <profile>
@@ -93,6 +94,11 @@
             <groupId>io.lippia.report</groupId>
             <artifactId>extentreports-cucumber4-adapter</artifactId>
             <version>1.1.0.10</version>
+        </dependency>
+        <dependency>
+            <groupId>io.rest-assured</groupId>
+            <artifactId>rest-assured</artifactId>
+            <version>4.3.1</version>
         </dependency>
     </dependencies>
     <build>
